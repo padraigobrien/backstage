@@ -1,5 +1,22 @@
 # example-app
 
+## 0.2.14
+
+### Patch Changes
+
+- Updated dependencies [19172f5a9]
+- Updated dependencies [12ece98cd]
+- Updated dependencies [6e612ce25]
+- Updated dependencies [025e122c3]
+- Updated dependencies [e9aab60c7]
+- Updated dependencies [da9f53c60]
+- Updated dependencies [32c95605f]
+- Updated dependencies [7881f2117]
+  - @backstage/plugin-cost-insights@0.8.0
+  - @backstage/core@0.5.1
+  - @backstage/catalog-model@0.7.1
+  - @backstage/cli@0.5.1
+
 ## 0.2.13
 
 ### Patch Changes
