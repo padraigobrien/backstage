@@ -1,6 +1,10 @@
 name: Prettier Markdown
 
-on: [push]
+on:
+  push:
+    branches: [master]
+    paths:
+    - 'docs/**'
 
 jobs:
   pretty:
@@ -13,11 +17,12 @@ jobs:
       uses: actions/setup-node@v2
       with:
         node-version: '14.x'
-    - run: npm install
+    - run: npm install -g yarn    
+    - run: yarn install
     - name: Prettify code
       uses: creyD/prettier_action@v3.1
       with:
         # This part is also where you can pass other options, for example:
-        prettier_options: --config docs/prettier.config.js --write docs/**/*.md
+        prettier_options: --config docs/prettier.config.js --write docs/**/*.md 
       env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        GITHUB_TOKEN: ${{ secrets.GH_SERVICE_ACCOUNT_TOKEN }}
