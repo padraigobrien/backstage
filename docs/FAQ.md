@@ -8,10 +8,12 @@ description: All FAQ related to Backstage
 
 ### Can we call Backstage something different? So that it fits our company better?
 
-Yes, Backstage is just a platform for building your own developer portal. WeYes,--find-config-path ./docs/prettier.config.js--find-config-path ./docs/prettier.config.js--find-config-path ./docs/prettier.config.jsBackstage is just a platform for building your own developer portal. We
-happen to call our internal version Backstage, as well, as a reference to our
-music roots. You can call your version whatever suits your team, company, or
-brand.
+Yes, Backstage is just a platform for building your own developer portal.
+WeYes,--find-config-path ./docs/prettier.config.js--find-config-path
+./docs/prettier.config.js--find-config-path ./docs/prettier.config.jsBackstage
+is just a platform for building your own developer portal. We happen to call our
+internal version Backstage, as well, as a reference to our music roots. You can
+call your version whatever suits your team, company, or brand.
 
 ### Is Backstage a monitoring platform?
 
