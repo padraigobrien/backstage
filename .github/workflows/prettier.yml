@@ -1,8 +1,7 @@
 name: Prettier Markdown
 
 on:
-  push:
-    branches: [master]
+  pull_request:  
     paths:
     - 'docs/**'
 
