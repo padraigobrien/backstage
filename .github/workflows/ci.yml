@@ -22,6 +22,8 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
+        with:
+          ref: ${{ github.event.pull_request.head.ref }}
       - name: fetch branch master
         run: git fetch origin master
 
@@ -76,7 +78,7 @@ jobs:
         uses: creyD/prettier_action@v3.1
         with:
           prettier_options: --config docs/prettier.config.js --write docs/**/*.md 
-          
+
       - name: prettier
         run: yarn prettier:check
 
