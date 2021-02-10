@@ -78,6 +78,7 @@ jobs:
         uses: creyD/prettier_action@v3.1
         with:
           prettier_options: --config docs/prettier.config.js --write docs/**/*.md 
+          same_commit: true
 
       - name: prettier
         run: yarn prettier:check
