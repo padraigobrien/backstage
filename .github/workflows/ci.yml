@@ -20,7 +20,7 @@ jobs:
       - uses: actions/checkout@v2
         with:
         # Make sure the actual branch is checked out when running on pull requests
-          ref: ${{ github.head_ref }}
+          ref: github.event.pull_request.head.sha
 
       - name: fetch branch master
         run: git fetch origin master
@@ -31,9 +31,10 @@ jobs:
       # End of yarn setup        
 
       - name: Prettify docs
-        uses: creyD/prettier_action@v3.1
+        uses: padraigobrien/prettier_action@v3.1
         with:
           prettier_options: --config docs/prettier.config.js --write docs/**/*.md 
-          same_commit: true  
+          same_commit: true 
+          branch: ${{ github.head_ref }}  
         env:
           GITHUB_TOKEN: ${{ secrets.GH_SERVICE_ACCOUNT_TOKEN }}  
