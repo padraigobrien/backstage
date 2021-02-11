@@ -20,3 +20,16 @@ jobs:
       - uses: actions/checkout@v2
       - name: fetch branch master
         run: git fetch origin master
+
+      - name: yarn install
+        if: steps.cache-modules.outputs.cache-hit != 'true'
+        run: yarn install --frozen-lockfile
+      # End of yarn setup        
+
+      - name: Prettify docs
+        uses: creyD/prettier_action@v3.1
+        with:
+          prettier_options: --config docs/prettier.config.js --write docs/**/*.md 
+          same_commit: true  
+        env:
+          GITHUB_TOKEN: ${{ secrets.GH_SERVICE_ACCOUNT_TOKEN }}  
