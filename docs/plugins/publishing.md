@@ -6,10 +6,9 @@ description: Documentation on Publishing npm packages
 
 ## npm
 
-npm packages are published through CI/CD in the
-workflow. Every commit that is merged to master will be checked for new versions
-of all public packages, and any new versions will automatically be published to
-npm.
+npm packages are published through CI/CD in the workflow. Every commit that is
+merged to master will be checked for new versions of all public packages, and
+any new versions will automatically be published to npm.
 
 ### Creating a new release
 
