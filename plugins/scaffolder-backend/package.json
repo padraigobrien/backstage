@@ -29,8 +29,8 @@
     "clean": "backstage-cli clean"
   },
   "dependencies": {
-    "@backstage/backend-common": "^0.5.1",
-    "@backstage/catalog-model": "^0.7.0",
+    "@backstage/backend-common": "^0.6.2",
+    "@backstage/catalog-model": "^0.9.4",
     "@backstage/config": "^0.1.2",
     "@backstage/integration": "^0.3.1",
     "@gitbeaker/core": "^28.0.2",
