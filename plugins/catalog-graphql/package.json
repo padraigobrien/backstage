@@ -27,19 +27,22 @@
     "prepack": "backstage-cli prepack",
     "postpack": "backstage-cli postpack",
     "generate:types": "graphql-codegen",
-    "clean": "backstage-cli clean"
+    "clean": "backstage-cli clean",
+    "prepublish": "npm run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "dependencies": {
-    "@backstage/backend-common": "^0.5.1",
-    "@backstage/catalog-model": "^0.7.0",
+    "@backstage/backend-common": "^0.15.1",
+    "@backstage/catalog-model": "^0.9.7",
     "@backstage/config": "^0.1.2",
     "@graphql-modules/core": "^0.7.17",
-    "apollo-server": "^2.16.1",
+    "apollo-server": "^3.0.0",
     "cross-fetch": "^3.0.6",
     "graphql": "^15.3.0",
     "graphql-tag": "^2.11.0",
     "graphql-type-json": "^0.3.2",
-    "winston": "^3.2.1"
+    "winston": "^3.2.1",
+    "@snyk/protect": "latest"
   },
   "devDependencies": {
     "@backstage/cli": "^0.5.0",
@@ -56,5 +59,6 @@
   },
   "files": [
     "dist"
-  ]
+  ],
+  "snyk": true
 }
