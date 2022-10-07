@@ -33,10 +33,10 @@
     "@types/json-schema": "^7.0.5",
     "@types/yup": "^0.29.8",
     "ajv": "^7.0.3",
-    "json-schema": "^0.2.5",
+    "json-schema": "^0.4.0",
     "lodash": "^4.17.15",
     "uuid": "^8.0.0",
-    "yup": "^0.29.3"
+    "yup": "^0.30.0"
   },
   "devDependencies": {
     "@backstage/cli": "^0.5.0",
