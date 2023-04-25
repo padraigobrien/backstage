@@ -31,7 +31,7 @@
   "dependencies": {
     "@aws-sdk/client-organizations": "^3.2.0",
     "@azure/msal-node": "^1.0.0-beta.3",
-    "@backstage/backend-common": "^0.5.1",
+    "@backstage/backend-common": "^0.13.1",
     "@backstage/catalog-model": "^0.7.0",
     "@backstage/config": "^0.1.2",
     "@octokit/graphql": "^4.5.8",
@@ -52,7 +52,7 @@
     "qs": "^6.9.4",
     "uuid": "^8.0.0",
     "winston": "^3.2.1",
-    "yaml": "^1.9.2",
+    "yaml": "^2.2.2",
     "yn": "^4.0.0",
     "yup": "^0.29.3"
   },
