@@ -31,8 +31,8 @@
   "dependencies": {
     "@backstage/core": "^0.5.0",
     "@backstage/catalog-model": "^0.7.0",
-    "@backstage/plugin-catalog": "^0.2.14",
-    "@backstage/test-utils": "^0.1.5",
+    "@backstage/plugin-catalog": "^0.6.4",
+    "@backstage/test-utils": "^0.2.2",
     "@backstage/theme": "^0.2.2",
     "@material-ui/core": "^4.11.0",
     "@material-ui/icons": "^4.9.1",
