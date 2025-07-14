@@ -27,7 +27,7 @@
     "migrate:create": "knex migrate:make -x ts"
   },
   "dependencies": {
-    "@backstage/backend-common": "^0.5.1",
+    "@backstage/backend-common": "^0.24.1",
     "@backstage/catalog-model": "^0.7.0",
     "@backstage/config": "^0.1.2",
     "@backstage/plugin-app-backend": "^0.3.5",
@@ -43,7 +43,7 @@
     "@gitbeaker/node": "^28.0.2",
     "@octokit/rest": "^18.0.12",
     "azure-devops-node-api": "^10.1.1",
-    "dockerode": "^3.2.1",
+    "dockerode": "^4.0.5",
     "example-app": "^0.2.13",
     "express": "^4.17.1",
     "express-promise-router": "^3.0.3",
